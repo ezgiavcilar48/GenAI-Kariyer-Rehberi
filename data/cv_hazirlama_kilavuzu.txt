@@ -1,0 +1,11 @@
+ETKİLİ CV HAZIRLAMA KILAVUZU
+
+1. İletişim Bilgileri: Adınız, soyadınız, telefon numaranız, profesyonel e-posta adresiniz ve varsa LinkedIn profil linkiniz en üstte yer almalıdır.
+
+2. Kısa Özet (Summary/Objective): CV'nizin en başında, kariyer hedeflerinizi ve en güçlü yetkinliklerinizi 3-4 cümle ile özetleyin. Bu, İK'nın ilk baktığı yerdir.
+
+3. Deneyimler (Experience): En yeni işinizden en eskiye doğru (ters kronolojik sıra) listeleme yapın. Her bir deneyim için sadece görev tanımı yapmak yerine, başardıklarınızı ve şirkete kattığınız değeri **sayılarla** ifade eden fiil (action verb) kullanarak yazın. Örneğin: "Müşteri şikayetlerini %20 azaltan yeni bir süreç geliştirdim."
+
+4. Eğitim Bilgileri (Education): En yüksek dereceli eğitiminizden başlayın. Bölümünüz, üniversiteniz ve mezuniyet yılınız yeterlidir. Yüksek not ortalamasına (Örn: 3.50/4.00 üzeri) sahipseniz bunu belirtebilirsiniz.
+
+5. Yetenekler (Skills): Teknik yeteneklerinizi (Python, SQL, Analiz Araçları, vb.) ve sosyal yeteneklerinizi (İletişim, problem çözme, takım çalışması, vb.) ayrı başlıklar altında listeleyin.
