@@ -201,20 +201,3 @@ cython_debug/
 .cursorignore
 .cursorindexingignore
 
-
-# 1. API Anahtarını içeren ortam değişkeni dosyası
-.env
-
-# 2. Python Sanal Ortamı (Gerekli değil, her kullanıcı kendi kurar)
-venv/
-
-# 3. RAG Vektör Veritabanı (Büyük ve gereksiz dosya)
-chroma_db/
-
-# 4. Genel Python önbellek ve derleme dosyaları
-__pycache__/
-*.pyc
-# Marimo
-marimo/_static/
-marimo/_lsp/
-__marimo__/
