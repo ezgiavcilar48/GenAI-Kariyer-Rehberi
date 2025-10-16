@@ -2,7 +2,7 @@
 
 ## 🚀 Projenin Amacı
 
-[cite_start]Bu projenin amacı, öğrencilere yönelik CV hazırlama, başarılı mülakat teknikleri ve staj/iş bulma süreçleri hakkında güvenilir ve kişiselleştirilmiş rehberlik sağlamak için **RAG (Retrieval Augmented Generation) temelli bir chatbot** geliştirmektir[cite: 2]. Chatbot, bir web arayüzü üzerinden erişilebilir olacaktır.
+Bu projenin amacı, öğrencilere yönelik CV hazırlama, başarılı mülakat teknikleri ve staj/iş bulma süreçleri hakkında güvenilir ve kişiselleştirilmiş rehberlik sağlamak için **RAG (Retrieval Augmented Generation) temelli bir chatbot** geliştirmektir[cite: 2]. Chatbot, bir web arayüzü üzerinden erişilebilir olacaktır.
 
 ## 💾 Veri Seti Hakkında Bilgi
 
