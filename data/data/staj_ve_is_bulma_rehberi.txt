@@ -1,0 +1,16 @@
+STAJ VE İŞ BULMA SÜREÇLERİNDE KULLANILACAK PLATFORMLAR
+
+Staj ve iş arama sürecinde birden fazla kanalı aktif olarak kullanmak başarı şansını artırır.
+
+1. Profesyonel Ağlar (Networking):
+* LinkedIn: İK profesyonellerini, hedef şirketlerdeki çalışanları takip edin ve onlarla iletişim kurun. Aktif profil tutmak çok önemlidir.
+* Kariyer Fuarları: Şirket yetkilileri ile doğrudan temas kurma ve CV verme fırsatları yaratır.
+
+2. Online İş/Staj Platformları:
+* Popüler Platformlar: Kariyer.net, Yenibiris.com, Secretcv gibi genel platformları takip edin.
+* Sektöre Özgü Platformlar: Örneğin, teknoloji sektörü için Github Jobs veya Toptal gibi platformlar.
+* Şirketlerin Kendi Kariyer Sayfaları: Büyük şirketlerin kariyer sayfaları, genelde ilanı platformlardan daha önce yayınlar.
+
+3. Başvuru Takibi:
+* Başvuru yaptığınız pozisyonları, tarihleri ve geri dönüş durumlarını mutlaka bir Excel veya Google Sheet tablosunda takip edin. Bu, süreci yönetmenizi kolaylaştırır ve moralinizi yüksek tutar.
+* Takip E-postası: Mülakatın ardından nazik bir "teşekkür ve takip" e-postası göndermek, profesyonel izlenim bırakır.
