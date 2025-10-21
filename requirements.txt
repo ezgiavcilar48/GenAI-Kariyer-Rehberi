@@ -12,6 +12,10 @@ unstructured
 # Vektör Veritabanı
 chromadb
 
+# LLM ve Entegrasyon Paketleri (Gemini için)
+google-genai
+langchain-google-genai
+
 # Embedding Modeli
 sentence-transformers
 
@@ -19,3 +23,5 @@ sentence-transformers
 streamlit
 
 langchain-text-splitters
+
+python-dotenv
