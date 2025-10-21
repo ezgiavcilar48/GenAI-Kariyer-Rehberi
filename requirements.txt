@@ -2,9 +2,6 @@
 langchain
 langchain-community 
 
-# LLM ve OpenAI Bağlantısı için yeni modül
-langchain-openai 
-
 # Veri Yükleme ve İşleme (PDF ve TXT okuma)
 pypdf 
 unstructured
@@ -22,6 +19,5 @@ sentence-transformers
 # Web Arayüzü
 streamlit
 
+# Metin Bölme
 langchain-text-splitters
-
-python-dotenv
