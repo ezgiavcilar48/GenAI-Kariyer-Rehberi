@@ -1,18 +1,18 @@
 # Streamlit Arayüzü
-streamlit
+streamlit==1.36.0
 
-# RAG Çatısı Temel Modülleri
-langchain
-langchain-core
-langchain-community
+# RAG Çatısı Temel Modülleri (Kararlı Sürümler)
+langchain==0.2.1
+langchain-core==0.2.1
+langchain-community==0.2.1
 
 # Google Gemini Entegrasyonu
 google-genai
-langchain-google-genai
+langchain-google-genai==0.1.1
 
 # Vektör Veritabanı
-chromadb
+chromadb==0.5.3
 numpy 
 
 # Veri Okuyucular
-pypdf
+pypdf==4.2.0
