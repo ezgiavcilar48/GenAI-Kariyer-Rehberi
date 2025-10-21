@@ -66,6 +66,17 @@ Uygulamanın Streamlit Cloud üzerinde dağıtılmış, canlı versiyonudur.
 
 **CANLI LİNK:** [https://genai-kariyer-rehberi.streamlit.app/](https://genai-kariyer-rehberi.streamlit.app/)
 
+---
+
+## 🎥 Proje Videosu ve Demo
+
+Projenin web arayüzündeki canlı çalışma akışını ve kabiliyetlerini görmek için aşağıdaki videoyu izleyebilirsiniz.
+
+### 🔗 Video Linki
+
+[Kariyer Asistanı Demo Videosu için Tıklayın]
+(https://youtu.be/7dNoT28YDwk)
+
 #### Kabiliyetlerin Test
 ### Projenin Kabiliyetlerinin Test Edilmesi
 
