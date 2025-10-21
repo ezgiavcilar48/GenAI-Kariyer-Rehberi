@@ -5,6 +5,15 @@ __pycache__/
 
 # C extensions
 *.so
+# Python Sanal Ortamı
+venv/
+__pycache__/
+
+# Vektör Veritabanı
+chroma_db/
+
+# Streamlit Cache
+.streamlit/
 
 # Distribution / packaging
 .Python
@@ -150,6 +159,8 @@ venv.bak/
 
 # Rope project settings
 .ropeproject
+
+chroma_db/
 
 # mkdocs documentation
 /site
