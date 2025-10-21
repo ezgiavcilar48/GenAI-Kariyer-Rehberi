@@ -1,8 +1,9 @@
 # Streamlit Arayüzü
 streamlit
 
-# RAG Çatısı
+# RAG Çatısı Temel Modülleri
 langchain
+langchain-core
 langchain-community
 
 # Google Gemini Entegrasyonu
