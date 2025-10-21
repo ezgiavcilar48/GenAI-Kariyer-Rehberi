@@ -10,7 +10,7 @@ DATA_PATH = "data"
 
 # !!! API ANAHTARINIZI BURAYA YAZIN !!! 
 # Ortam değişkeni sorununu kesin çözmek için koda gömülmüştür.
-GEMINI_API_KEY_LOCAL = "AIzaSyA1By-j7LyAK0SrraOKbOSIUv3v68rHYvU" 
+GEMINI_API_KEY_LOCAL = "AIzaSyB_ZHXZq4FX-PRHeH6A_oFoUC2w-SC4qYY" 
 
 def load_documents():
     """data/ klasöründeki tüm .txt dosyalarını UTF-8 kodlamasıyla yükler."""

@@ -12,7 +12,7 @@ CHROMA_PATH = "chroma_db"
 PROJECT_NAME = "Kariyer Asistanı Chatbotu"
 
 # !!! API ANAHTARINIZI BURAYA YAZIN !!! 
-GEMINI_API_KEY_LOCAL = "AIzaSyA1By-j7LyAK0SrraOKbOSIUv3v68rHYvU" 
+GEMINI_API_KEY_LOCAL = "AIzaSyB_ZHXZq4FX-PRHeH6A_oFoUC2w-SC4qYY" 
 
 # Streamlit arayüzünün başlıklarını ayarlar
 st.set_page_config(page_title=PROJECT_NAME, page_icon="💼")
