@@ -76,7 +76,6 @@ Projenin web arayüzündeki canlı çalışma akışını ve kabiliyetlerini gö
 
 Kariyer Asistanı Demo Videosu için Tıklayın: https://youtu.be/6eYYNCBcfJU
 
-#### Kabiliyetlerin Test
 ### Projenin Kabiliyetlerinin Test Edilmesi
 
 Aşağıdaki senaryolar, chatbotun veri setindeki bilgilere ne kadar doğru ve bağlamsal cevap verdiğini test etmek için kullanılmalıdır. Bu testler, RAG sisteminin doğruluğunu kanıtlar.
