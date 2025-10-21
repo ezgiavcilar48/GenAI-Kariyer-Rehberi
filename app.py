@@ -3,8 +3,10 @@ import streamlit as st
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from langchain_community.vectorstores import Chroma
-from langchain.chains import ConversationalRetrievalChain
 from langchain.memory import ConversationBufferMemory
+from langchain.chains.conversational_retrieval import ConversationalRetrievalChain
+
+
 
 # Sabitler
 CHROMA_PATH = "chroma_db"
