@@ -2,28 +2,68 @@
 
 ## 🚀 Projenin Amacı
 
-Bu projenin amacı, öğrencilere yönelik CV hazırlama, başarılı mülakat teknikleri ve staj/iş bulma süreçleri hakkında güvenilir ve kişiselleştirilmiş rehberlik sağlamak için **RAG (Retrieval Augmented Generation) temelli bir chatbot** geliştirmektir[cite: 2]. Chatbot, bir web arayüzü üzerinden erişilebilir olacaktır.
+Bu proje, Akbank GenAI Bootcamp kapsamında geliştirilen, **RAG (Retrieval Augmented Generation) temelli** bir kariyere asistanı chatbotudur. Chatbot, özellikle öğrencilere ve yeni mezunlara yönelik olarak;
+* Etkili CV hazırlama,
+* Başarılı mülakat teknikleri ve ipuçları,
+* Uygun staj/iş bulma stratejileri
+konularında yapay zekâ destekli rehberlik sunarak bir web arayüzü üzerinden kullanıcıya sunulmayı amaçlamaktadır.
 
 ## 💾 Veri Seti Hakkında Bilgi
 
-* **Türü:** Kariyer rehberliği, CV formatları, yaygın mülakat soruları ve staj/iş arama ipuçlarını içeren dokümanlar (PDF, Word, TXT veya web sayfaları).
-* **İçerik:** CV örnekleri, mülakatlarda sorulan davranışsal ve teknik soruların cevaplama stratejileri, popüler staj portalları listesi ve başvuru süreçleri.
-* **Hazırlanış Metodolojisi:** (Bu kısım, 2. adımda veri setini belirledikten sonra doldurulacaktır. Şimdilik "Harici kaynaklardan (çeşitli kariyer web siteleri, IK blogları, vb.) toplanmış ve derlenmiş dokümanlardan oluşacaktır." yazabiliriz.)
+Proje, öğrencilere ve yeni mezunlara kariyer rehberliği sağlamak amacıyla özel olarak hazırlanmış 3 adet metin dosyası (`.txt`) kullanmaktadır. Bu veri setleri, RAG modelinin bilgi tabanını oluşturmaktadır.
 
-## 🛠 Kullanılacak Yöntemler ve Teknolojiler
+**Veri Seti İçeriği (Ana Konular):**
 
-* [cite_start]**Temel Mimari:** Retrieval Augmented Generation (RAG) [cite: 2]
-* **Programlama Dili:** Python
-* [cite_start]**Büyük Dil Modeli (LLM):** OpenAI API (veya Gemini API [cite: 42][cite_start], Hugging Face açık kaynaklı modeller [cite: 42])
-* [cite_start]**Embedding Modeli:** Google, Cohere veya açık kaynaklı bir model [cite: 43]
-* [cite_start]**Vektör Veritabanı:** Chroma, FAISS veya Pinecone [cite: 43]
-* [cite_start]**RAG Pipeline Framework:** LangChain veya Haystack [cite: 44]
-* [cite_start]**Web Arayüzü:** Flask veya Streamlit [cite: 24]
+1.  **CV Hazırlama Kılavuzu:** Etkili iletişim bilgileri, kısa özetin önemi, deneyimleri sayılarla ifade etme ve yetenek listeleme gibi konuları kapsar.
+2.  **Staj ve İş Bulma Rehberi:** Profesyonel ağlar (LinkedIn), online platformlar ve başvuru takip stratejilerine odaklanır.
+3.  **Mülakat İpuçları:** Mülakat öncesi hazırlık, davranışsal sorular için STAR metodu ve "Bize kendinizden bahseder misiniz?" sorusuna yanıt stratejisi gibi konuları içerir.
 
-## 💡 Elde Edilen Sonuçlar (Proje Sonunda Doldurulacak)
+**Veri Seti Hazırlama Metodolojisi:**
 
-* (Bu kısım, projenin sonunda, chatbot'un yetenekleri ve kullanıcı deneyimi özetlenerek doldurulacaktır.)
+Bu veri seti, güvenilir kariyer danışmanlığı kaynaklarından **manuel olarak derlenmiş ve projenin odağına uygun** şekilde yapılandırılmıştır. RAG sistemi için **temiz ve hedefe yönelik** (curated) metin belgeleri şeklinde hazırlanmıştır.
 
-## 🌐 Web Arayüzü Linki (Proje Sonunda Eklenecek)
+## 🛠 Çözüm Mimariniz ve Teknolojiler (Adım 4)
 
-[cite_start][PROJE DEPLOY EDİLDİKTEN SONRA BURAYA LİNK EKLENECEKTİR]
+### Mimari Yaklaşım
+Bu projenin temel amacı, hazırlanan özel bilgi setine dayalı, güvenilir ve hedefe yönelik cevaplar sunmak için **Retrieval Augmented Generation (RAG)** mimarisini kullanmaktır.
+
+#### RAG Mimarisi Adım Adım Akış
+1.  **Veri Hazırlama (Ingestion):** Kariyer rehberliği metinleri, **LangChain** kullanılarak küçük, anlamsal parçalara (chunks) ayrılır.
+2.  **Gömme (Embedding) ve Depolama:** Her metin parçası, **Google'ın Embedding Modeli** ile vektörlere dönüştürülür ve **ChromaDB**'ye kaydedilir.
+3.  **Geri Çağırma (Retrieval):** Kullanıcı sorusu vektöre dönüştürülerek Vektör Veritabanında en alakalı bilgi parçaları geri çağrılır.
+4.  **Üretim (Generation):** Geri çağrılan bilgi ve kullanıcı sorusu, **Gemini API**'a (**Generation Model**) gönderilerek nihai cevap üretilir.
+
+#### Kullanılan Teknolojiler
+* **RAG Pipeline Framework:** **LangChain**
+* **Generation Model (LLM):** **Gemini API**
+* **Vektör Veritabanı:** **ChromaDB**
+* **Web Arayüzü:** **Streamlit**
+
+## 💡 Elde Edilen Sonuçlar Özet
+
+Geliştirilen RAG temelli sistem, kullanıcıların spesifik kariyer sorularına hızlı, bağlamsal olarak doğru ve veri setine dayalı cevaplar verebilmektedir. Proje, web arayüzü üzerinden erişilebilir, kullanıcı dostu ve verimli bir kariyer asistanı sunmaktadır.
+
+---
+
+## 🌐 ÇALIŞMA KILAVUZU ve DEPLOY (Adım 3 & Adım 5)
+
+### 1. Kodunuzun Çalışma Kılavuzu
+
+Projenin yerel ortamda başarılı bir şekilde çalıştırılabilmesi için gerekenler aşağıda özetlenmiştir.
+
+* **Detaylı Kılavuz:** Tüm sanal ortam (`venv`) kurulumu, bağımlılıkların yüklenmesi ve sorun giderme adımları için lütfen projenin ana dizininde bulunan **[SETUP_GUIDE.md](SETUP_GUIDE.md)** dosyasına bakınız.
+* **Özet Çalıştırma Adımları:**
+    1.  **Bağımlılıklar:** `pip install -r requirements.txt`
+    2.  **API Anahtarı:** `export GEMINI_API_KEY="YOUR_API_KEY_HERE"`
+    3.  **Veritabanı Oluşturma:** `python setup_rag_db.py`
+    4.  **Projenin Başlatılması:** `streamlit run app.py`
+
+### 2. Web Arayüzü & Product Kılavuzu
+
+#### 🎓 Kariyer Asistanı Canlı Linki
+
+Uygulamanın Streamlit Cloud üzerinde dağıtılmış, canlı versiyonudur.
+
+**CANLI LİNK:** [https://genai-kariyer-rehberi.streamlit.app/](https://genai-kariyer-rehberi.streamlit.app/)
+
+#### Kabiliyetlerin Test
