@@ -1,23 +1,10 @@
-# RAG Pipeline Framework
-langchain
 langchain-community 
-
-# Veri Yükleme ve İşleme (PDF ve TXT okuma)
+langchain-text-splitters 
+langchain-google-genai 
+google-genai
+chromadb
+sentence-transformers
+streamlit
+python-dotenv
 pypdf 
 unstructured
-
-# Vektör Veritabanı
-chromadb
-
-# LLM ve Entegrasyon Paketleri (Gemini için)
-google-genai
-langchain-google-genai
-
-# Embedding Modeli
-sentence-transformers
-
-# Web Arayüzü
-streamlit
-
-# Metin Bölme
-langchain-text-splitters
