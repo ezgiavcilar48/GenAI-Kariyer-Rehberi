@@ -1,20 +1,17 @@
-google-genai
-langchain
-langchain-community
-chromadb
-pypdf
+# Streamlit Arayüzü
 streamlit
-# Gerekli LLM/Embedding Entegrasyonu
-google-genai
-langchain-google-genai  <-- BU KESİNLİKLE OLMALI
 
 # RAG Çatısı
 langchain
 langchain-community
 
+# Google Gemini Entegrasyonu
+google-genai
+langchain-google-genai
+
 # Vektör Veritabanı
 chromadb
+numpy 
 
-# Veri Okuma ve Arayüz
+# Veri Okuyucular
 pypdf
-streamlit
