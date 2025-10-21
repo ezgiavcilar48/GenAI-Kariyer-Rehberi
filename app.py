@@ -1,12 +1,13 @@
 import streamlit as st
-import os # Ortam değişkenlerini yönetmek için
-from dotenv import load_dotenv
-from langchain_community.document_loaders import DirectoryLoader, TextLoader
-from langchain_text_splitters import RecursiveCharacterTextSplitter
-from langchain_community.embeddings import SentenceTransformerEmbeddings
-from langchain_community.vectorstores import Chroma
-from langchain_google_genai import ChatGoogleGenerativeAI 
-from langchain.chains import ConversationalRetrievalChain
+import os 
+from dotenv import load_dotenv # .env yükleme
+from langchain_community.document_loaders import DirectoryLoader, TextLoader # Community loader
+from langchain_text_splitters import RecursiveCharacterTextSplitter # Text Splitter
+from langchain_community.embeddings import SentenceTransformerEmbeddings # Embeddings
+from langchain_community.vectorstores import Chroma # Vektör DB
+from langchain_google_genai import ChatGoogleGenerativeAI # Gemini LLM
+from langchain.chains import ConversationalRetrievalChain # En güvenli zincir importu (Core'dan alıyoruz)
+from langchain_community.chains import ConversationalRetrievalChain as ConversationalRetrievalChainCommunity # Alternatif zincir (Hata verirse kullanmak için)
 
 
 # --- 1. TEORİK MİMARİ AÇIKLAMASI (PDF'in 4. Adım Gereksinimi) ---
