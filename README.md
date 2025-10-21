@@ -74,8 +74,7 @@ Projenin web arayüzündeki canlı çalışma akışını ve kabiliyetlerini gö
 
 ### 🔗 Video Linki
 
-[Kariyer Asistanı Demo Videosu için Tıklayın]
-(https://youtu.be/7dNoT28YDwk)
+Kariyer Asistanı Demo Videosu için Tıklayın: https://youtu.be/6eYYNCBcfJU
 
 #### Kabiliyetlerin Test
 ### Projenin Kabiliyetlerinin Test Edilmesi
