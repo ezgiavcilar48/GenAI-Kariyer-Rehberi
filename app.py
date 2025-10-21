@@ -4,8 +4,7 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from langchain_community.vectorstores import Chroma
 from langchain.memory import ConversationBufferMemory
-from langchain.chains.conversational_retrieval import ConversationalRetrievalChain
-
+from langchain.chains import ConversationalRetrievalChain
 
 
 # Sabitler
