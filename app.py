@@ -42,7 +42,7 @@ def initialize_rag_chain():
         
         # 3. LLM (Generation Model) Yükle (Anahtar doğrudan veriliyor)
         llm = ChatGoogleGenerativeAI(
-            model="gemini-1.5-flash", 
+            model="gemini-2.5-flash", 
             temperature=0.2,
             google_api_key=GEMINI_API_KEY_LOCAL
         )
