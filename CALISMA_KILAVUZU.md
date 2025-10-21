@@ -1,43 +1,94 @@
-# ⚙️ Proje Çalışma Kılavuzu
+# ⚙️ KARIYER ASİSTANI - DETAYLI ÇALIŞMA KILAVUZU
 
-Bu proje, RAG tabanlı bir Kariyer Asistanı Chatbot'udur. Çalıştırmak için aşağıdaki adımları izleyin.
+Bu kılavuz, GenAI-Kariyer-Rehberi projesinin yerel ortamda başarılı bir şekilde kurulması ve çalıştırılması için gereken tüm adımları içermektedir.
 
-## 1. Sanal Ortam Kurulumu
+## 1. Ön Koşullar
 
-Projenin bağımlılıklarını izole etmek için sanal ortam kullanılır.
+Projenin başarıyla çalışması için sisteminizde aşağıdaki yazılımlar kurulu olmalıdır:
 
-1.  Proje klasörüne gidin:
+* **Python:** Sürüm 3.8 veya üzeri.
+* **Git:** Proje dosyalarını klonlamak için.
+* **Gemini API Anahtarı:** Google AI Studio üzerinden alınmış aktif bir API anahtarı.
+
+## 2. Projenin Kurulumu
+
+### Adım 2.1: Depoyu Klonlama ve Sanal Ortam Oluşturma
+
+1.  **Depoyu Klonlayın:** Projenin GitHub deposunu yerel diskinize kopyalayın.
+
     ```bash
-    cd Kariyer-Asistani-RAG-Chatbot
+    git clone [https://github.com/KULLANICI_ADINIZ/GenAI-Kariyer-Rehberi.git](https://github.com/KULLANICI_ADINIZ/GenAI-Kariyer-Rehberi.git)
+    cd GenAI-Kariyer-Rehberi
     ```
-2.  Sanal ortamı oluşturun:
+
+2.  **Sanal Ortam Oluşturma:** Projenin bağımlılıklarının sistemdeki diğer projelerle çakışmaması için bir sanal ortam oluşturun.
+
     ```bash
     python -m venv venv
     ```
-3.  Sanal ortamı aktive edin:
-    * Windows: `venv\Scripts\activate`
-    * macOS/Linux: `source venv/bin/activate`
 
-## 2. Bağımlılıkların Kurulumu
+3.  **Sanal Ortamı Aktifleştirme:**
 
-1.  `requirements.txt` dosyasındaki tüm kütüphaneleri tek seferde kurun:
+    ```bash
+    # Linux/macOS için:
+    source venv/bin/activate
+    
+    # Windows (PowerShell) için:
+    .\venv\Scripts\activate
+    ```
+
+### Adım 2.2: Bağımlılıkları Yükleme
+
+1.  **`requirements.txt` ile Kütüphaneleri Yükleme:** Sanal ortam aktifken, gerekli tüm Python kütüphanelerini yükleyin.
+
     ```bash
     pip install -r requirements.txt
     ```
 
-## 3. API Anahtarı Ayarlama
+### Adım 2.3: API Anahtarını Ayarlama (ZORUNLU)
 
-OpenAI API anahtarınızı (veya kullanacağınız LLM'e ait anahtarı) ortam değişkeni olarak ayarlayın:
+Proje, Gemini API'yi kullanmaktadır. LLM'in ve Embedding modellerinin çalışması için API anahtarınızın ortam değişkeni olarak ayarlanması gerekir.
 
-* Windows: `set OPENAI_API_KEY="Sizin-Anahtarınız"`
-* macOS/Linux: `export OPENAI_API_KEY="Sizin-Anahtarınız"`
+1.  **Anahtarı Ortam Değişkeni Olarak Tanımlama:**
 
-## 4. Chatbot'u Çalıştırma
+    ```bash
+    # Linux/macOS için:
+    export GEMINI_API_KEY="SİZİN_API_ANAHTARINIZ"
 
-Kodlama tamamlandıktan sonra (Genellikle `app.py` veya `chatbot.py` gibi bir dosya olacaktır):
+    # Windows (PowerShell) için:
+    $env:GEMINI_API_KEY="SİZİN_API_ANAHTARINIZ"
+    ```
 
-1.  Arayüzü çalıştırma komutunu girin:
+## 3. Projenin Çalıştırılması
+
+Proje, iki aşamada çalıştırılır: Önce veri tabanının oluşturulması, sonra uygulamanın başlatılması.
+
+### Adım 3.1: Vektör Veritabanını Oluşturma
+
+Bu adım, `data/` klasöründeki kariyer rehberliği metinlerini okur, vektörlere dönüştürür ve **`chroma_db`** klasörüne kaydeder. **Bu adımı sadece bir kez çalıştırmalısınız.**
+
+1.  **Çalıştırma Komutu:**
+
+    ```bash
+    python setup_rag_db.py
+    ```
+
+2.  **Beklenen Çıktı:** Komutun sonunda `Vektör veritabanı başarıyla oluşturuldu/güncellendi.` mesajını görmelisiniz.
+
+### Adım 3.2: Streamlit Uygulamasını Başlatma
+
+Veritabanı oluşturulduktan sonra, web arayüzünü başlatın:
+
+1.  **Çalıştırma Komutu:**
+
     ```bash
     streamlit run app.py
     ```
-2.  Komutun çalışmasıyla tarayıcınızda otomatik olarak açılacak olan yerel adrese gidin (Genellikle: http://localhost:8501).
+
+2.  **Erişim:** Uygulama otomatik olarak tarayıcınızda açılacaktır (Genellikle `http://localhost:8501`).
+
+## 4. Sorun Giderme (Troubleshooting)
+
+* **`UnicodeDecodeError`:** Eğer metin dosyalarını yüklerken bu hatayı alırsanız, `setup_rag_db.py` dosyasındaki `TextLoader`'ın `encoding='utf-8'` kullandığından emin olun.
+* **`DefaultCredentialsError`:** Bu, API anahtarınızın doğru ayarlanmadığı anlamına gelir. Lütfen 2.3. adımı tekrar kontrol edin ve anahtarınızı tırnak içinde doğru bir şekilde yazdığınızdan emin olun.
+* **API Hataları (400, 404):** Yeni bir API anahtarı alın ve 2.3. adımı tekrarlayın. Ayrıca, `setup_rag_db.py` ve `app.py` dosyalarındaki model isimlerinin Google API ile uyumlu olduğundan emin olun.

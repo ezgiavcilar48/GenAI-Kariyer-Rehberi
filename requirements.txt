@@ -1,10 +1,10 @@
-gunicorn
+gunicorn      #Prodüksiyon Web Sunucusu
 google-generativeai==0.8.3
-python-dotenv==1.0.1
-chromadb==0.4.24
+python-dotenv==1.0.1     #Ortam Değişkeni Yönetimi
+chromadb==0.4.24   #Vektör Veritabanı
 langchain==0.3.11
 langchain-community==0.3.11
-langchain-google-genai==2.0.10
-langchain-chroma==0.2.2
-flask==3.0.3
-markdown==3.6 
+langchain-google-genai==2.0.10     #LangChain-Gemini Entegrasyonu   
+langchain-chroma==0.2.2    #LangChain-ChromaDB Entegrasyonu
+flask==3.0.3     #Web Arayüzü/Uygulama Sunucusu
+markdown==3.6   #Metin Biçimlendirme

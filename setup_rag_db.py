@@ -8,7 +8,7 @@ from langchain_community.vectorstores import Chroma
 CHROMA_PATH = "chroma_db"
 DATA_PATH = "data"
 
-# !!! API ANAHTARINIZI BURAYA YAZIN !!! 
+# !!! API ANAHTARI
 # Ortam değişkeni sorununu kesin çözmek için koda gömülmüştür.
 GEMINI_API_KEY_LOCAL = "AIzaSyB_ZHXZq4FX-PRHeH6A_oFoUC2w-SC4qYY" 
 

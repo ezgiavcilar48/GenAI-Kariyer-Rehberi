@@ -11,7 +11,7 @@ from langchain.chains import ConversationalRetrievalChain
 CHROMA_PATH = "chroma_db"
 PROJECT_NAME = "Kariyer Asistanı Chatbotu"
 
-# !!! API ANAHTARINIZI BURAYA YAZIN !!! 
+# !!! API ANAHTARI 
 GEMINI_API_KEY_LOCAL = "AIzaSyB_ZHXZq4FX-PRHeH6A_oFoUC2w-SC4qYY" 
 
 # Streamlit arayüzünün başlıklarını ayarlar

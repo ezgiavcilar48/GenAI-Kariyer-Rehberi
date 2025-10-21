@@ -22,7 +22,7 @@ Proje, öğrencilere ve yeni mezunlara kariyer rehberliği sağlamak amacıyla �
 
 Bu veri seti, güvenilir kariyer danışmanlığı kaynaklarından **manuel olarak derlenmiş ve projenin odağına uygun** şekilde yapılandırılmıştır. RAG sistemi için **temiz ve hedefe yönelik** (curated) metin belgeleri şeklinde hazırlanmıştır.
 
-## 🛠 Çözüm Mimariniz ve Teknolojiler (Adım 4)
+## 🛠 Çözüm Mimariniz ve Teknolojiler 
 
 ### Mimari Yaklaşım
 Bu projenin temel amacı, hazırlanan özel bilgi setine dayalı, güvenilir ve hedefe yönelik cevaplar sunmak için **Retrieval Augmented Generation (RAG)** mimarisini kullanmaktır.
@@ -39,19 +39,19 @@ Bu projenin temel amacı, hazırlanan özel bilgi setine dayalı, güvenilir ve 
 * **Vektör Veritabanı:** **ChromaDB**
 * **Web Arayüzü:** **Streamlit**
 
-## 💡 Elde Edilen Sonuçlar Özet
+## 💡 Elde Edilen Sonuçlar
 
 Geliştirilen RAG temelli sistem, kullanıcıların spesifik kariyer sorularına hızlı, bağlamsal olarak doğru ve veri setine dayalı cevaplar verebilmektedir. Proje, web arayüzü üzerinden erişilebilir, kullanıcı dostu ve verimli bir kariyer asistanı sunmaktadır.
 
 ---
 
-## 🌐 ÇALIŞMA KILAVUZU ve DEPLOY (Adım 3 & Adım 5)
+## 🌐 ÇALIŞMA KILAVUZU ve DEPLOY 
 
 ### 1. Kodunuzun Çalışma Kılavuzu
 
 Projenin yerel ortamda başarılı bir şekilde çalıştırılabilmesi için gerekenler aşağıda özetlenmiştir.
 
-* **Detaylı Kılavuz:** Tüm sanal ortam (`venv`) kurulumu, bağımlılıkların yüklenmesi ve sorun giderme adımları için lütfen projenin ana dizininde bulunan **[SETUP_GUIDE.md](SETUP_GUIDE.md)** dosyasına bakınız.
+* **Detaylı Kılavuz:** Tüm sanal ortam (`venv`) kurulumu, bağımlılıkların yüklenmesi ve sorun giderme adımları için lütfen projenin ana dizininde bulunan **(CALISMA_KILAVUZU.md)** dosyasına bakınız.
 * **Özet Çalıştırma Adımları:**
     1.  **Bağımlılıklar:** `pip install -r requirements.txt`
     2.  **API Anahtarı:** `export GEMINI_API_KEY="YOUR_API_KEY_HERE"`
@@ -67,3 +67,18 @@ Uygulamanın Streamlit Cloud üzerinde dağıtılmış, canlı versiyonudur.
 **CANLI LİNK:** [https://genai-kariyer-rehberi.streamlit.app/](https://genai-kariyer-rehberi.streamlit.app/)
 
 #### Kabiliyetlerin Test
+### Projenin Kabiliyetlerinin Test Edilmesi
+
+Aşağıdaki senaryolar, chatbotun veri setindeki bilgilere ne kadar doğru ve bağlamsal cevap verdiğini test etmek için kullanılmalıdır. Bu testler, RAG sisteminin doğruluğunu kanıtlar.
+
+#### 1. CV Hazırlama Kabiliyeti Testi
+* **Test Sorusu:** "CV'de deneyimleri yazarken sadece görev tanımı yapmak yerine ne yapmalıyım?"
+* **Beklenen Cevap:** Cevapta mutlaka, başarıların ve şirkete katılan değeri **sayılarla** ifade eden fiil (action verb) kullanarak yazma önerisi vurgulanmalıdır.
+
+#### 2. Mülakat İpuçları Kabiliyeti Testi
+* **Test Sorusu:** "Davranışsal bir soruya (örneğin bir çatışma çözme deneyimi) nasıl cevap vermeliyim?"
+***Beklenen Cevap:** Cevap, **STAR metodunun** (Situation, Task, Action, Result) adımları kullanılarak yapılandırılmış bir yanıt stratejisi sunmalıdır.
+
+#### 3. Staj/İş Bulma Kabiliyeti Testi
+* **Test Sorusu:** "Başvuru sürecinde takibi kolaylaştırmak ve moralimi yüksek tutmak için ne yapmalıyım?"
+***Beklenen Cevap:** Cevap, başvuru yapılan pozisyonları, tarihleri ve geri dönüş durumlarını mutlaka bir **Excel veya Google Sheet tablosunda takip etme** önerisini içermelidir.
