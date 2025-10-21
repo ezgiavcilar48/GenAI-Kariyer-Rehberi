@@ -6,8 +6,7 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.embeddings import SentenceTransformerEmbeddings
 from langchain_community.vectorstores import Chroma
 from langchain_google_genai import ChatGoogleGenerativeAI 
-from langchain.chains import ConversationalRetrievalChain
-from langchain.chains import ConversationalRetrievalChain
+from langchain_community.chains import ConversationalRetrievalChain
 
 
 # --- 1. TEORİK MİMARİ AÇIKLAMASI (PDF'in 4. Adım Gereksinimi) ---
