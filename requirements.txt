@@ -1,0 +1,21 @@
+# RAG Pipeline Framework
+langchain
+langchain-community 
+
+# LLM ve OpenAI Bağlantısı için yeni modül
+langchain-openai 
+
+# Veri Yükleme ve İşleme (PDF ve TXT okuma)
+pypdf 
+unstructured
+
+# Vektör Veritabanı
+chromadb
+
+# Embedding Modeli
+sentence-transformers
+
+# Web Arayüzü
+streamlit
+
+langchain-text-splitters
