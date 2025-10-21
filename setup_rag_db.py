@@ -47,7 +47,7 @@ def create_database(chunks):
     
     # API Anahtarını doğrudan koda geçirerek Embedding başlatılır.
     embeddings = GoogleGenerativeAIEmbeddings(
-        model="text-embedding-004",
+        model="models/text-embedding-004",
         google_api_key=GEMINI_API_KEY_LOCAL
     )
     

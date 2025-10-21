@@ -30,7 +30,7 @@ def initialize_rag_chain():
     try:
         # 1. Embedding Modelini Yükle (Anahtar doğrudan veriliyor)
         embeddings = GoogleGenerativeAIEmbeddings(
-            model="text-embedding-004",
+            model="models/text-embedding-004",
             google_api_key=GEMINI_API_KEY_LOCAL
         )
         
